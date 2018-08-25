@@ -20,13 +20,17 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      }
-    ]
+      },
+      // {
+      //   test: /\.scss$/,
+      //   use: ['style-loader', 'css-loader', 'sass-loader']
+      // }
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Blog With React',
-      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
+      template: path.join(__dirname, 'src', 'index.html')
     }),
     new CleanWebpackPlugin([path.join(__dirname, 'dist')])
   ]
