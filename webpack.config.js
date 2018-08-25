@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+
 
 module.exports = {
   mode: 'development',
@@ -25,6 +27,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Blog With React',
       meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
-    })
+    }),
+    new CleanWebpackPlugin([path.join(__dirname, 'dist')])
   ]
 };
