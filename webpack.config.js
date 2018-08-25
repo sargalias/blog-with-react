@@ -5,7 +5,10 @@ module.exports = {
   entry: './src/app.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'public', 'dist')
+    path: path.resolve(__dirname, 'dist')
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist')
   },
   module: {
     rules: [
