@@ -5,16 +5,17 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Blow with React</title>
+  <title>Blog with React</title>
   <link rel="stylesheet" href="/assets/styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">Blog with React</a>
+    <a class="navbar-brand text-primary" href="/"><div class="large">Blog</div><div class="small">with React</div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,52 +47,104 @@
   </div>
 </nav>
 
-
-<div class="categories">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="categories">
   <div class="container">
-    <ul>
-      <li><a href="/categories/home">Home</a></li>
-      <li><a href="/categories/food">Food</a></li>
-      <li><a href="/categories/travel">Travel</a></li>
-      <li><a href="/categories/sports">Sports</a></li>
-    </ul>
+    <!--<a class="navbar-brand" href="/">Categories</a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCategories" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--<span class="navbar-toggler-icon"></span>-->
+      <span>All Categories</span>
+      <span id="category-toggle-symbol">^</span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCategories">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="navbar-brand">Categories</li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Food <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/new">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/404">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/404">Sports</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
 
 
 <div class="container">
-  <div class="blog">
-    <article class="blog-post-exceprt text-center">
-  <h3>Sample Title</h3>
-  <div class="metadata"><p>Published on 13/09/2018 by <a href="/">AuthorName</a></p></div>
-  <p><img src="https://via.placeholder.com/250x250" alt="" class="img-fluid"></p>
-  <div class="exceprt">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut doloribus expedita itaque, optio tempora velit voluptatum! Accusamus alias culpa cupiditate distinctio exercitationem facilis magnam praesentium quaerat veniam vero.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut doloribus expedita itaque, optio tempora velit voluptatum! Accusamus alias culpa cupiditate distinctio exercitationem facilis magnam praesentium quaerat veniam vero.</p>
+  
+<div class="blog">
+  <div class="blog-metadata">
+  <div class="metadata">
+    <p class="results-metadata">Showing <span class="bold">1</span> to <span class="bold">12</span> of 1000 posts</p>
+  </div>
+  <div class="blog-search-container">
+    <input type="text" class="blog-search" placeholder="Search blog">
+  </div>
+</div>
+
+  <div class="blog-listings">
+  <article class="blog-listing">
+  <div class="header">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/250x250" height="300" alt="">
+    </div>
+    <div class="category-text-container"><a href="#" class="category-text">Travel</a></div>
+  </div>
+  <div class="content">
+    <h3>Post title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.</p>
+    <a href="#" class="post-link">Read more >></a>
+  </div>
+  <div class="metadata-container">
+    <div class="metadata">Published by <a href="#">User</a> at <a href="">11/08/2018</a></div>
   </div>
 </article>
-
-    <article class="blog-post-exceprt text-center">
-  <h3>Sample Title</h3>
-  <div class="metadata"><p>Published on 13/09/2018 by <a href="/">AuthorName</a></p></div>
-  <p><img src="https://via.placeholder.com/250x250" alt="" class="img-fluid"></p>
-  <div class="exceprt">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut doloribus expedita itaque, optio tempora velit voluptatum! Accusamus alias culpa cupiditate distinctio exercitationem facilis magnam praesentium quaerat veniam vero.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut doloribus expedita itaque, optio tempora velit voluptatum! Accusamus alias culpa cupiditate distinctio exercitationem facilis magnam praesentium quaerat veniam vero.</p>
+  <article class="blog-listing">
+  <div class="header">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/250x250" height="300" alt="">
+    </div>
+    <div class="category-text-container"><a href="#" class="category-text">Travel</a></div>
+  </div>
+  <div class="content">
+    <h3>Post title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.</p>
+    <a href="#" class="post-link">Read more >></a>
+  </div>
+  <div class="metadata-container">
+    <div class="metadata">Published by <a href="#">User</a> at <a href="">11/08/2018</a></div>
   </div>
 </article>
-
-    <article class="blog-post-exceprt text-center">
-  <h3>Sample Title</h3>
-  <div class="metadata"><p>Published on 13/09/2018 by <a href="/">AuthorName</a></p></div>
-  <p><img src="https://via.placeholder.com/250x250" alt="" class="img-fluid"></p>
-  <div class="exceprt">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut doloribus expedita itaque, optio tempora velit voluptatum! Accusamus alias culpa cupiditate distinctio exercitationem facilis magnam praesentium quaerat veniam vero.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut doloribus expedita itaque, optio tempora velit voluptatum! Accusamus alias culpa cupiditate distinctio exercitationem facilis magnam praesentium quaerat veniam vero.</p>
+  <article class="blog-listing">
+  <div class="header">
+    <div class="image-container">
+      <img src="https://via.placeholder.com/250x250" height="300" alt="">
+    </div>
+    <div class="category-text-container"><a href="#" class="category-text">Travel</a></div>
+  </div>
+  <div class="content">
+    <h3>Post title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.</p>
+    <a href="#" class="post-link">Read more >></a>
+  </div>
+  <div class="metadata-container">
+    <div class="metadata">Published by <a href="#">User</a> at <a href="">11/08/2018</a></div>
   </div>
 </article>
+</div>
 
-  </div>
+</div>
+
+
   <nav aria-label="Page navigation example" class="text-center">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>

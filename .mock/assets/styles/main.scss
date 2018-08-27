@@ -4,7 +4,13 @@
 
 // Add your styles here
 @import "bootstrap/scss/bootstrap";
-@import "components/pagination";
-@import "components/categories";
 
+@import "base/utility";
+
+@import "components/navbar";
+@import "components/categories";
+@import "components/blog-metadata";
+@import "components/blog-listings";
+@import "components/blog-listing";
+@import "components/pagination";
 
