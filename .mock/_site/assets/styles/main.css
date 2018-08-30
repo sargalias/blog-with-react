@@ -6927,6 +6927,18 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   margin: 0 auto; }
 
+.comment-list .comment {
+  border: 1px solid #6c757d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa; }
+  .comment-list .comment:first-child {
+    margin-top: 0; }
+  .comment-list .comment img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; }
+
 html, body {
   min-height: 100vh; }
 

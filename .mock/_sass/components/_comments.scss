@@ -1,0 +1,17 @@
+
+.comment-list {
+  .comment {
+    border: 1px solid $secondary;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: $light;
+    &:first-child {
+      margin-top: 0;
+    }
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
