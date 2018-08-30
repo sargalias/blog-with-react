@@ -6826,6 +6826,23 @@ a.text-dark:hover, a.text-dark:focus {
     -moz-appearance: searchfield-cancel-button;
     appearance: searchfield; }
 
+.blog-listings .blog-listing {
+  margin-bottom: 2rem; }
+  .blog-listings .blog-listing:last-of-type {
+    margin-bottom: 0; }
+  .blog-listings .blog-listing .metadata-container {
+    color: #6c757d; }
+@media (min-width: 768px) {
+  .blog-listings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; }
+    .blog-listings .blog-listing {
+      margin-bottom: 0; } }
+@media (min-width: 992px) {
+  .blog-listings {
+    grid-template-columns: repeat(3, 1fr); } }
+
 .blog-listing {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
@@ -6838,7 +6855,8 @@ a.text-dark:hover, a.text-dark:focus {
       width: 0;
       height: 0;
       padding-right: 100%;
-      padding-bottom: calc(0.5 * 100%); }
+      padding-bottom: calc(0.5 * 100%);
+      position: relative; }
     .blog-listing .header img {
       display: block;
       width: 100%;
@@ -6865,23 +6883,6 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 1rem;
     margin-top: auto; }
 
-.blog-listings .blog-listing {
-  margin-bottom: 2rem; }
-  .blog-listings .blog-listing:last-of-type {
-    margin-bottom: 0; }
-  .blog-listings .blog-listing .metadata-container {
-    color: #6c757d; }
-@media (min-width: 768px) {
-  .blog-listings {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem; }
-    .blog-listings .blog-listing {
-      margin-bottom: 0; } }
-@media (min-width: 992px) {
-  .blog-listings {
-    grid-template-columns: repeat(3, 1fr); } }
-
 .pagination {
   justify-content: center; }
   .pagination .page-link.disabled {
@@ -6891,6 +6892,39 @@ a.text-dark:hover, a.text-dark:focus {
 
 .valid {
   border-color: #28a745; }
+
+.blog-single .container-sm {
+  max-width: 800px;
+  margin: auto; }
+.blog-single .header {
+  position: relative; }
+  .blog-single .header .image-container {
+    width: 0;
+    height: 0;
+    padding-right: 100%;
+    padding-bottom: calc(0.5 * 100%);
+    position: relative; }
+  .blog-single .header img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; }
+  .blog-single .header .category-text-container {
+    background-color: #007bff;
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    color: white; }
+    .blog-single .header .category-text-container .category-text {
+      color: white; }
+.blog-single .content img {
+  width: 100%;
+  display: block;
+  margin: 0 auto; }
 
 html, body {
   min-height: 100vh; }
