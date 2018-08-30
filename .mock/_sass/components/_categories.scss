@@ -1,7 +1,7 @@
 
 #categories {
   color: white;
-  padding: 1rem;
+  padding: $size-md;
 
   ul {
     margin: 0;
@@ -46,7 +46,7 @@
       display: inline-block;
       font-size: 1.1rem;
       font-weight: 600;
-      margin-left: 1rem;
+      margin-left: $size-md;
 
       &:after {
         border-bottom-width: 3px;

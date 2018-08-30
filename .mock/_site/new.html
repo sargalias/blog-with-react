@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog with React</title>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <div class="container">
+    <a class="navbar-brand text-primary" href="/"><div class="large">Blog</div><div class="small">with React</div></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/new.html">Add New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/404.html">404</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login.html">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout.html">Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="categories">
+  <div class="container">
+    <!--<a class="navbar-brand" href="/">Categories</a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCategories" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--<span class="navbar-toggler-icon"></span>-->
+      <span>All Categories</span>
+      <span id="category-toggle-symbol">^</span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCategories">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="navbar-brand">Categories</li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Food <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/new">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/404">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/404">Sports</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container my-4">
+  <h1 class="text-center">Add Post</h1>
+
+<form action="" class="mt-4">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" id="title" class="form-control" required>
+    <div class="valid-feedback display-block">
+      Looks good!
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="privacy">Privacy</label>
+    <select name="privacy" id="privacy" class="form-control" required>
+      <option value="public" checked>Public</option>
+      <option value="private">Private</option>
+      <option value="unlisted">Unlisted</option>
+    </select>
+    <div class="invalid-feedback display-block">
+      Please choose a username.
+    </div>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="comments">
+    <label class="form-check-label" for="comments">Allow comments</label>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="" id="message" rows="3" class="form-control" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+<script>
+  ClassicEditor
+    .create( document.querySelector( '#message' ), {
+      toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote'],
+      heading: {
+        options: [
+          {model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph'},
+          {model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2'},
+          {model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3'}
+        ]
+      }
+    })
+    .catch( error => {
+      console.error( error );
+    } );
+</script>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<footer class="bg-dark">
+  <div class="container">
+    <div id="copyright">&copy; Spyros Argalias DATE</div>
+    <div id="website-link">App by <a href="https://sargalias.com" target="_blank">Sargalias</a></div>
+    <div id="code-repository-link"><a href="https://github.com" target="_blank">View code on GitHub</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -2,7 +2,8 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-// Add your styles here
+@import "base/variables";
+
 @import "bootstrap/scss/bootstrap";
 
 @import "base/utility";
@@ -13,5 +14,6 @@
 @import "components/blog-listings";
 @import "components/blog-listing";
 @import "components/pagination";
+@import "components/form";
 @import "components/footer";
 
