@@ -4,6 +4,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
   .header {
     position: relative;
     .image-container {
@@ -21,25 +22,29 @@
       position: absolute;
     }
     .category-text-container {
-      background-color: $primary;
-      border-radius: 1rem;
       position: absolute;
       left: 0;
       top: 0;
       margin: $size-md;
-      padding: 0.5rem 1rem;
-      color: white;
-      .category-text {
-        color: white;
+      .btn {
+        border-radius: $size-md;
       }
     }
   }
+
   .content {
     padding: $size-md;
+
+    .post-title {
+      color: black;
+      text-decoration: none;
+    }
+
     .post-link {
       color: $primary;
     }
   }
+
   .metadata-container {
     border-top: 1px solid rgba(0,0,0,.15);
     padding: $size-md;

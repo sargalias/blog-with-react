@@ -6868,18 +6868,17 @@ a.text-dark:hover, a.text-dark:focus {
       object-fit: cover;
       position: absolute; }
     .blog-listing .header .category-text-container {
-      background-color: #007bff;
-      border-radius: 1rem;
       position: absolute;
       left: 0;
       top: 0;
-      margin: 1rem;
-      padding: 0.5rem 1rem;
-      color: white; }
-      .blog-listing .header .category-text-container .category-text {
-        color: white; }
+      margin: 1rem; }
+      .blog-listing .header .category-text-container .btn {
+        border-radius: 1rem; }
   .blog-listing .content {
     padding: 1rem; }
+    .blog-listing .content .post-title {
+      color: black;
+      text-decoration: none; }
     .blog-listing .content .post-link {
       color: #007bff; }
   .blog-listing .metadata-container {
