@@ -5,6 +5,10 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+
+    .metadata-container {
+      color: $secondary;
+    }
   }
   @include media-breakpoint-up(md) {
     display: grid;

@@ -6752,7 +6752,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #categories {
   color: white;
-  padding: 1rem 0; }
+  padding: 1rem; }
   #categories ul {
     margin: 0;
     padding: 0;
@@ -6866,6 +6866,8 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 2rem; }
   .blog-listings .blog-listing:last-of-type {
     margin-bottom: 0; }
+  .blog-listings .blog-listing .metadata-container {
+    color: #6c757d; }
 @media (min-width: 768px) {
   .blog-listings {
     display: grid;
@@ -6883,3 +6885,21 @@ a.text-dark:hover, a.text-dark:focus {
     user-select: none; }
     .pagination .page-link.disabled:hover {
       background-color: white; }
+
+html, body {
+  min-height: 100vh; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+footer {
+  background-color: #6c757d;
+  color: white;
+  height: 5rem;
+  margin-top: auto; }
+  footer .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
