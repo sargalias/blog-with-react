@@ -6796,12 +6796,32 @@ a.text-dark:hover, a.text-dark:focus {
 
 .blog-metadata {
   align-items: center;
+  color: #6c757d;
   display: flex;
   justify-content: space-between; }
   .blog-metadata .results-metadata {
     margin-bottom: 0; }
-  .blog-metadata .blog-search {
-    padding: 0.2rem 0.5rem; }
+  .blog-metadata .blog-search-container {
+    position: relative; }
+    .blog-metadata .blog-search-container #search-icon {
+      position: absolute;
+      left: 0.5rem;
+      top: 0;
+      height: 100%;
+      display: flex; }
+      .blog-metadata .blog-search-container #search-icon::before {
+        margin: auto; }
+    .blog-metadata .blog-search-container #search-input {
+      padding-left: 2rem;
+      border-radius: 0.2rem; }
+  .blog-metadata input[type="search"] {
+    -webkit-appearance: searchfield;
+    -moz-appearance: searchfield;
+    appearance: searchfield; }
+  .blog-metadata input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+    -moz-appearance: searchfield-cancel-button;
+    appearance: searchfield; }
 
 .blog-listing {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
