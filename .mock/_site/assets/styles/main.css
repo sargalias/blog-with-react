@@ -6737,6 +6737,10 @@ a.text-dark:hover, a.text-dark:focus {
 .display-block {
   display: block; }
 
+.container-sm {
+  max-width: 800px;
+  margin: auto; }
+
 #navbar {
   background-color: white; }
   #navbar .navbar-brand {
@@ -6893,9 +6897,6 @@ a.text-dark:hover, a.text-dark:focus {
 .valid {
   border-color: #28a745; }
 
-.blog-single .container-sm {
-  max-width: 800px;
-  margin: auto; }
 .blog-single .header {
   position: relative; }
   .blog-single .header .image-container {
