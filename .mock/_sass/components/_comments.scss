@@ -3,7 +3,7 @@
   .comment {
     border: 1px solid $secondary;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: $size-md;
     background-color: $light;
     &:first-child {
       margin-top: 0;
