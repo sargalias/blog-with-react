@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog with React</title>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <div class="container">
+    <a class="navbar-brand text-primary" href="/"><div class="large">Blog</div><div class="small">with React</div></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/new.html">Add New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/404.html">404</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/single.html">Sample post</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login.html">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout.html">Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container my-4">
+  
+<div id="dashboard">
+  <section>
+    <h1>Dashboard</h1>
+  </section>
+  <section id="dashboard-filters">
+    <span class="filter active" id="all" >All (n)</span>
+    |
+    <span class="filter" id="public">Public (n)</span>
+    |
+    <span class="filter" id="unlisted">Unlisted (n)</span>
+    |
+    <span class="filter" id="private">Private (n)</span>
+  </section>
+  <div id="user-posts" class="comment-list mt-4">
+    <div class="user-post jumbotron">
+  <h3>Post title</h3>
+  <p><span class="bold">Published on:</span> 31/08/2018</p>
+  <p><span class="bold">Privacy:</span> Public</p>
+  <p><span class="bold">Allows comments:</span> Yes / No</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi delectus deleniti doloribus eaque ex facere ipsum iste laborum nesciunt perferendis possimus, praesentium provident, quaerat qui saepe sunt, veniam voluptatum.</p>
+  <div class="buttons">
+    <a class="btn btn-primary" href="story-link">View Post</a>
+    <button class="btn btn-warning">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+    <div class="user-post jumbotron">
+  <h3>Post title</h3>
+  <p><span class="bold">Published on:</span> 31/08/2018</p>
+  <p><span class="bold">Privacy:</span> Public</p>
+  <p><span class="bold">Allows comments:</span> Yes / No</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi delectus deleniti doloribus eaque ex facere ipsum iste laborum nesciunt perferendis possimus, praesentium provident, quaerat qui saepe sunt, veniam voluptatum.</p>
+  <div class="buttons">
+    <a class="btn btn-primary" href="story-link">View Post</a>
+    <button class="btn btn-warning">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+    <div class="user-post jumbotron">
+  <h3>Post title</h3>
+  <p><span class="bold">Published on:</span> 31/08/2018</p>
+  <p><span class="bold">Privacy:</span> Public</p>
+  <p><span class="bold">Allows comments:</span> Yes / No</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi delectus deleniti doloribus eaque ex facere ipsum iste laborum nesciunt perferendis possimus, praesentium provident, quaerat qui saepe sunt, veniam voluptatum.</p>
+  <div class="buttons">
+    <a class="btn btn-primary" href="story-link">View Post</a>
+    <button class="btn btn-warning">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<footer class="bg-dark">
+  <div class="container">
+    <div id="copyright">&copy; Spyros Argalias DATE</div>
+    <div id="website-link">App by <a href="https://sargalias.com" target="_blank">Sargalias</a></div>
+    <div id="code-repository-link"><a href="https://github.com" target="_blank">View code on GitHub</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
