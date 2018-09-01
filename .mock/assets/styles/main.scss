@@ -2,11 +2,13 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+@import "cerulean-theme/variables";
 @import "base/variables";
-
 @import "bootstrap/scss/bootstrap";
+@import "cerulean-theme/bootswatch";
 
 @import "base/utility";
+@import "base/general";
 
 @import "components/navbar";
 @import "components/categories";
@@ -20,4 +22,5 @@
 @import "components/dashboard";
 @import "components/alerts";
 @import "components/footer";
+@import "components/buttons";
 

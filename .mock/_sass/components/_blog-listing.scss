@@ -1,13 +1,14 @@
 .blog-listing {
   box-shadow: 0 0 $size-md 0 rgba(0,0,0,.15);
-  border-radius: $size-md;
+  //border-radius: $size-md;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: box-shadow $time-md;
 
   &:hover {
-    box-shadow: 0 0 30px 0 rgba(0,0,0,.20);
+    box-shadow: 0 0 1rem $primary;
+    //box-shadow: 0 0 30px $secondary;
     .header img {
       filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px );
     }
@@ -33,14 +34,14 @@
   .content {
     padding: $size-md;
 
-    .post-title {
-      color: black;
+    .post-title a {
       text-decoration: none;
     }
   }
 
   .metadata-container {
     border-top: 1px solid rgba(0,0,0,.15);
+    color: $secondary;
     padding: $size-md;
     margin-top: auto;
   }

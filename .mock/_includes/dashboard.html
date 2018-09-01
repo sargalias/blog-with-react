@@ -1,20 +1,24 @@
 
-<div id="dashboard">
-  <section>
-    <h1>Dashboard</h1>
-  </section>
-  <section id="dashboard-filters">
-    <span class="filter active" id="all" >All (n)</span>
-    |
-    <span class="filter" id="public">Public (n)</span>
-    |
-    <span class="filter" id="unlisted">Unlisted (n)</span>
-    |
-    <span class="filter" id="private">Private (n)</span>
-  </section>
-  <div id="user-posts" class="comment-list mt-4">
-    {% include dashboard-post.html %}
-    {% include dashboard-post.html %}
-    {% include dashboard-post.html %}
+<section id="dashboard">
+  <div class="container mt-5">
+    <section>
+      <h1>Dashboard</h1>
+    </section>
+
+    <section id="dashboard-filters">
+      <span class="filter active" id="all" >All (n)</span>
+      |
+      <span class="filter" id="public">Public (n)</span>
+      |
+      <span class="filter" id="unlisted">Unlisted (n)</span>
+      |
+      <span class="filter" id="private">Private (n)</span>
+    </section>
+
+    <section id="user-posts" class="comment-list mt-4">
+      {% include dashboard-post.html %}
+      {% include dashboard-post.html %}
+      {% include dashboard-post.html %}
+    </section>
   </div>
-</div>
+</section>

@@ -2,6 +2,10 @@
 #categories {
   color: white;
   padding: $size-md;
+  &.bg-dark {
+    background-color: $navbar-dark-bg-color !important;
+    background-image: unset;
+  }
 
   ul {
     margin: 0;

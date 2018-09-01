@@ -8,8 +8,11 @@ body {
 }
 
 footer {
-  background-color: $secondary;
-  color: white;
+  &.bg-dark {
+    background-color: $navbar-dark-bg-color !important;
+    background-image: unset;
+    color: white;
+  }
   height: 5rem;
   margin-top: auto;
   .container {

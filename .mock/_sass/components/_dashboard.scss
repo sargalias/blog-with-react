@@ -1,5 +1,8 @@
 
 #dashboard {
+  .user-post {
+    border: 1px solid darken($light, 10);
+  }
   #dashboard-filters {
     .filter {
       color: $link-color;
