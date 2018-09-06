@@ -5,7 +5,6 @@ import './styles/style.scss';
 
 const App = () => (
   <div>
-    <h1>Hello</h1>
   </div>
 );
 
