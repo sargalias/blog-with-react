@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack",
+    "test": "jest",
     "start-mock": "live-server .mock/_site --port=4000"
   },
   "repository": {
