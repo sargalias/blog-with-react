@@ -1,0 +1,27 @@
+
+.blog-single {
+  .header {
+    position: relative;
+    .category-text-container {
+      background-color: $primary;
+      border-radius: 1rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: $size-md;
+      padding: 0.5rem 1rem;
+      color: white;
+      .category-text {
+        color: white;
+      }
+    }
+  }
+  .content {
+    img {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+

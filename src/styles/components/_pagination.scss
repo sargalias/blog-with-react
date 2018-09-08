@@ -1,0 +1,9 @@
+.pagination {
+  justify-content: center;
+  .page-link.disabled {
+    user-select: none;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
