@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavLink should render correctly with no props 1`] = `
+<li
+  className="nav-item false"
+>
+  <a
+    className="nav-link"
+  >
+     
+  </a>
+</li>
+`;
+
+exports[`NavLink should render correctly with props and isActive false 1`] = `
+<li
+  className="nav-item false"
+>
+  <a
+    className="nav-link"
+    href="/test"
+  >
+    test
+     
+  </a>
+</li>
+`;
+
+exports[`NavLink should render correctly with props and isActive false 2`] = `
+<li
+  className="nav-item active"
+>
+  <a
+    className="nav-link"
+    href="/test"
+  >
+    test
+     
+    <span
+      className="sr-only"
+    >
+      (current)
+    </span>
+  </a>
+</li>
+`;

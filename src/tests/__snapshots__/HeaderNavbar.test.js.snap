@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderNavbar should render correctly 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-light bg-light"
+  id="navbar"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="navbar-brand text-primary"
+      href="/"
+    >
+      <div
+        className="large"
+      >
+        Blog
+      </div>
+      <div
+        className="small"
+      >
+        with React
+      </div>
+    </a>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarSupportedContent"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav mr-auto"
+      >
+        <NavLink
+          isActive={true}
+          label="Home"
+          link="/"
+        />
+        <NavLink
+          label="Add New"
+          link="/new"
+        />
+        <NavLink
+          label="404"
+          link="/404"
+        />
+        <NavLink
+          label="Single"
+          link="/single"
+        />
+      </ul>
+      <ul
+        className="navbar-nav ml-auto"
+      >
+        <NavLink
+          label="Dashboard"
+          link="/dashboard"
+        />
+        <NavLink
+          label="Log In"
+          link="/login"
+        />
+        <NavLink
+          label="Log Out"
+          link="/logout"
+        />
+      </ul>
+    </div>
+  </div>
+</nav>
+`;
