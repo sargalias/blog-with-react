@@ -1,0 +1,22 @@
+
+#navbar {
+  background-color: white;
+  .navbar-brand {
+    text-align: center;
+    .large {
+      font-size: 1.6rem;
+      line-height: 1;
+      font-family: 'Leckerli One', cursive;
+    }
+    .small {
+      font-size: 0.8rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .nav-item {
+      font-size: 1.1rem;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+  }
+}

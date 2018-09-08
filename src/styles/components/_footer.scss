@@ -1,0 +1,24 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  &.bg-dark {
+    background-color: $navbar-dark-bg-color !important;
+    background-image: unset;
+    color: white;
+  }
+  height: 5rem;
+  margin-top: auto;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

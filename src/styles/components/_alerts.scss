@@ -1,0 +1,9 @@
+
+#alerts .alert {
+  &:first-child {
+    margin-top: $spacer * 3;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

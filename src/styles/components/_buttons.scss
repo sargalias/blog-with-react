@@ -1,0 +1,29 @@
+
+.btn:hover {
+  background-image: unset;
+}
+
+.btn-primary:hover {
+  background-color: darken($primary, 5);
+}
+.btn-info:hover {
+  background-color: darken($info, 5);
+}
+.btn-warning:hover {
+  background-color: darken($warning, 5);
+}
+.btn-danger:hover {
+  background-color: darken($danger, 5);
+}
+.btn-success:hover {
+  background-color: darken($success, 5);
+}
+
+.buttons {
+  .btn {
+    margin-right: $size-md;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

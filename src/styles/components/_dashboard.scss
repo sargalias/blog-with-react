@@ -1,0 +1,23 @@
+
+#dashboard {
+  .user-post {
+    border: 1px solid darken($light, 10);
+  }
+  #dashboard-filters {
+    .filter {
+      color: $link-color;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .active {
+      color: black;
+      cursor: auto;
+      pointer-events: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.blog-listing {
+  box-shadow: 0 0 $size-md 0 rgba(0,0,0,.15);
+  //border-radius: $size-md;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow $time-md;
+
+  &:hover {
+    box-shadow: 0 0 1rem $primary;
+    //box-shadow: 0 0 30px $secondary;
+    .header img {
+      filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px );
+    }
+  }
+
+  .header {
+    position: relative;
+    img {
+      filter: brightness( 98% ) contrast( 100% ) saturate( 100% ) blur( 0px );
+      transition: filter 0.3s ease-in-out;
+    }
+    .category-text-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: $size-md;
+      .btn {
+        border-radius: $size-md;
+      }
+    }
+  }
+
+  .content {
+    padding: $size-md;
+
+    .post-title a {
+      text-decoration: none;
+    }
+  }
+
+  .metadata-container {
+    border-top: 1px solid rgba(0,0,0,.15);
+    color: $secondary;
+    padding: $size-md;
+    margin-top: auto;
+  }
+}
