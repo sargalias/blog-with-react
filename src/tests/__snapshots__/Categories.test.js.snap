@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories renders correctly with sample props 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-dark bg-dark"
+  id="categories"
+>
+  <div
+    className="container"
+  >
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarCategories"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span>
+        All Categories
+      </span>
+      <span
+        id="category-toggle-symbol"
+      >
+        ^
+      </span>
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarCategories"
+    >
+      <ul
+        className="navbar-nav ml-auto mr-auto"
+      >
+        <li
+          className="navbar-brand"
+        >
+          Categories
+        </li>
+        <CategoryButton
+          hoverColor="green"
+          isActive={false}
+          key="Food"
+          label="Food"
+        />
+        <CategoryButton
+          hoverColor="green"
+          isActive={true}
+          key="Home"
+          label="Home"
+        />
+        <CategoryButton
+          hoverColor="green"
+          isActive={false}
+          key="Travel"
+          label="Travel"
+        />
+      </ul>
+    </div>
+  </div>
+</nav>
+`;
