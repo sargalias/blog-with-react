@@ -46,7 +46,6 @@
       display: inline-block;
     }
     .nav-item {
-      //color: red;
       display: inline-block;
       font-size: 1.1rem;
       font-weight: 600;
@@ -65,6 +64,10 @@
       }
       .nav-link {
         padding-top: 0.8rem;
+        transition: color 250ms;
+        &:hover {
+          color: inherit;
+        }
       }
     }
 
