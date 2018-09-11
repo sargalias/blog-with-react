@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alerts should render correctly with one alert 1`] = `
+<section
+  id="alerts"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="alert alert-danger alert-dismissible fade show"
+      role="alert"
+    >
+      test
+      <button
+        aria-label="Close"
+        className="close"
+        data-dismiss="alert"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Alerts should render correctly with two alerts 1`] = `
+<section
+  id="alerts"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="alert alert-danger alert-dismissible fade show"
+      role="alert"
+    >
+      test
+      <button
+        aria-label="Close"
+        className="close"
+        data-dismiss="alert"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+    </div>
+    <div
+      className="alert alert-success alert-dismissible fade show"
+      role="alert"
+    >
+      test 2
+      <button
+        aria-label="Close"
+        className="close"
+        data-dismiss="alert"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+`;
