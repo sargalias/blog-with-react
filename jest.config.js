@@ -1,5 +1,5 @@
 module.exports = {
-  verbose: true,
+  // verbose: true,
   setupTestFrameworkScriptFile: "<rootDir>src/setupTests.js",
   snapshotSerializers: ["enzyme-to-json/serializer"],
   moduleNameMapper: {
