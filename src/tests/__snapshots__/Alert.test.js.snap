@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`alert should render correctly with no props 1`] = `
+<div
+  className="alert alert-undefined alert-dismissible fade show"
+  role="alert"
+>
+  <button
+    aria-label="Close"
+    className="close"
+    data-dismiss="alert"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+    >
+      ×
+    </span>
+  </button>
+</div>
+`;
+
+exports[`alert should render correctly with props 1`] = `
+<div
+  className="alert alert-success alert-dismissible fade show"
+  role="alert"
+>
+  Test
+  <button
+    aria-label="Close"
+    className="close"
+    data-dismiss="alert"
+    type="button"
+  >
+    <span
+      aria-hidden="true"
+    >
+      ×
+    </span>
+  </button>
+</div>
+`;
