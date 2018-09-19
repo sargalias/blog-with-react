@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alerts should render correctly with one alert 1`] = `
+<section
+  id="alerts"
+>
+  <div
+    className="container"
+  >
+    <Alert
+      key="test"
+      text="test"
+      type="danger"
+    />
+  </div>
+</section>
+`;
+
+exports[`Alerts should render correctly with two alerts 1`] = `
+<section
+  id="alerts"
+>
+  <div
+    className="container"
+  >
+    <Alert
+      key="test"
+      text="test"
+      type="danger"
+    />
+    <Alert
+      key="test 2"
+      text="test 2"
+      type="success"
+    />
+  </div>
+</section>
+`;
