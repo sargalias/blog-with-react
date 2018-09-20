@@ -11,7 +11,7 @@ test('Categories renders correctly with no props', () => {
 });
 
 test('Categories renders correctly with sample props', () => {
-  const wrapper = shallow(<Categories categories={['Food', 'Home', 'Travel']} activeCategory={'Home'} />);
+  const wrapper = shallow(<Categories categories={categories} activeCategory={'Home'} />);
   expect(wrapper).toMatchSnapshot();
 });
 

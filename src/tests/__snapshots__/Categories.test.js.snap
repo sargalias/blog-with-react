@@ -100,6 +100,12 @@ exports[`Categories renders correctly with sample props 1`] = `
           key="Travel"
           label="Travel"
         />
+        <CategoryButton
+          hoverColor="green"
+          isActive={false}
+          key="Sports"
+          label="Sports"
+        />
       </ul>
     </div>
   </div>
