@@ -39,3 +39,17 @@ test('BlogListing should have the correct image', () => {
   const re = new RegExp(`src="${sampleBlogPost.imageURL}"`);
   expect(wrapper.find('img').html()).toMatch(re);
 });
+
+test('BlogListing should have the correct excerpt', () => {
+  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
+  expect(wrapper.find('p').text()).toBe(sampleBlogPost.excerpt);
+});
+
+test('BlogListing excerpt section should have no HTML with no excerpt', () => {
+  const blogPost = {
+    ...sampleBlogPost,
+    excerpt: ''
+  };
+  const wrapper = shallow(<BlogListing blogPost={blogPost} />);
+  expect(wrapper.find('.content #excerpt').length).toBe(0);
+});

@@ -43,8 +43,10 @@ exports[`BlogListing should render correctly with props 1`] = `
         Test title
       </a>
     </h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.
+    <p
+      id="excerpt"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat harum obcaecati pariatur sint tempore unde. Aperiam commodi distinctio earum eligendi, enim itaque laudantium magni neque porro temporibus vitae voluptatum?
     </p>
     <a
       href="#"
