@@ -21,7 +21,7 @@ const BlogListing = ( { blogPost, user } ) => {
         <a href="#">Read more &raquo;</a>
       </div>
       <div className="metadata-container">
-        <div className="metadata">Published by <a href="#">User</a> at <a href="">11/08/2018</a></div>
+        <div className="metadata">Published by <a href={`/users/${user.id}`} id="userLink">{ user.displayName }</a> at <a href="">{ moment(date).format('DD/MM/YYYY') }</a></div>
       </div>
     </article>
   )

@@ -62,15 +62,16 @@ exports[`BlogListing should render correctly with props 1`] = `
     >
       Published by 
       <a
-        href="#"
+        href="/users/1500"
+        id="userLink"
       >
-        User
+        Test displayName
       </a>
        at 
       <a
         href=""
       >
-        11/08/2018
+        01/01/1970
       </a>
     </div>
   </div>

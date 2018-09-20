@@ -63,3 +63,12 @@ test('BlogListing excerpt section should have no HTML with no excerpt', () => {
 test('BlogListing should have the correct category', () => {
   expect(wrapper.find('.category-text-container').text()).toBe(sampleBlogPost.category);
 });
+
+test('BlogListing should have the correct metadata', () => {
+  const metadataText = wrapper.find('.metadata').text();
+  const expectedText = `Published by ${sampleUser.displayName} at ${moment(sampleBlogPost.date).format('DD/MM/YYYY')}`;
+  expect(metadataText).toBe(expectedText);
+
+  const userLink = wrapper.find('#userLink');
+  expect(userLink.render().attr('href')).toBe(`/users/${sampleUser.id}`);
+});
