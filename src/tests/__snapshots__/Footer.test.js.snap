@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render correctly 1`] = `
+<div>
+  <div
+    class="mt-5"
+  />
+  <footer
+    class="bg-dark"
+  >
+    <div
+      class="container"
+    >
+      <div
+        id="copyright"
+      >
+        © Spyros Argalias 
+        1970
+      </div>
+      <div
+        id="website-link"
+      >
+        App by 
+        <a
+          href="https://sargalias.com"
+          target="_blank"
+        >
+          Spyros Argalias
+        </a>
+      </div>
+      <div
+        id="code-repository-link"
+      >
+        <a
+          href="https://github.com/sargalias/blog-with-react"
+          target="_blank"
+        >
+          View code on GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
