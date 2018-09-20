@@ -8,7 +8,7 @@ const sampleBlogPost = {
   category: 'Food',
   title: 'Test title',
   excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat harum obcaecati pariatur sint tempore unde. Aperiam commodi distinctio earum eligendi, enim itaque laudantium magni neque porro temporibus vitae voluptatum?',
-  postLink: '/test-link',
+  postId: '501',
   userName: 'Test username',
   userLink: 'Test userlink',
   date: moment(0)
@@ -71,4 +71,16 @@ test('BlogListing should have the correct metadata', () => {
 
   const userLink = wrapper.find('#userLink');
   expect(userLink.render().attr('href')).toBe(`/users/${sampleUser.id}`);
+});
+
+test('BlogListing image, title and Read More correctly link to the post', () => {
+  const expected = `/posts/${sampleBlogPost.postId}`;
+
+  const imgLinkWrapper = wrapper.find('#image-link');
+  const titleLinkWrapper = wrapper.find('#post-title-link');
+  const readMoreLinkWrapper = wrapper.find('#read-more-link');
+
+  expect(imgLinkWrapper.render().attr('href')).toBe(expected);
+  expect(titleLinkWrapper.render().attr('href')).toBe(expected);
+  expect(readMoreLinkWrapper.render().attr('href')).toBe(expected);
 });
