@@ -26,7 +26,8 @@ exports[`BlogListing should render correctly with props 1`] = `
     >
       <a
         className="btn btn-primary"
-        href="#"
+        href="/categories/food"
+        id="category-link"
       >
         Food
       </a>

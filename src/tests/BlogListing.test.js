@@ -64,6 +64,11 @@ test('BlogListing should have the correct category', () => {
   expect(wrapper.find('.category-text-container').text()).toBe(sampleBlogPost.category);
 });
 
+test('BlogListing should have the correct category link', () => {
+  const expected = `/categories/${sampleBlogPost.category.toLowerCase()}`;
+  expect(wrapper.find('#category-link').render().attr('href')).toBe(expected);
+});
+
 test('BlogListing should have the correct metadata', () => {
   const metadataText = wrapper.find('.metadata').text();
   const expectedText = `Published by ${sampleUser.displayName} at ${moment(sampleBlogPost.date).format('DD/MM/YYYY')}`;
