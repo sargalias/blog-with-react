@@ -13,9 +13,18 @@ const sampleBlogPost = {
   userLink: 'Test userlink',
   date: moment(0)
 };
+const sampleUser = {
+  displayName: 'Test displayName',
+  id: 1500,
+};
+
+let wrapper;
+
+beforeEach(() => {
+  wrapper = shallow(<BlogListing blogPost={sampleBlogPost} user={sampleUser}/>);
+});
 
 test('BlogListing should render correctly with props', () => {
-  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   expect(wrapper).toMatchSnapshot();
 });
 
@@ -30,18 +39,15 @@ test('BlogListing should be empty with no props', () => {
 });
 
 test('BlogListing should have the correct post title', () => {
-  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   expect(wrapper.find('h3').text()).toBe(sampleBlogPost.title);
 });
 
 test('BlogListing should have the correct image', () => {
-  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   const re = new RegExp(`src="${sampleBlogPost.imageURL}"`);
   expect(wrapper.find('img').html()).toMatch(re);
 });
 
 test('BlogListing should have the correct excerpt', () => {
-  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   expect(wrapper.find('p').text()).toBe(sampleBlogPost.excerpt);
 });
 
@@ -50,11 +56,10 @@ test('BlogListing excerpt section should have no HTML with no excerpt', () => {
     ...sampleBlogPost,
     excerpt: ''
   };
-  const wrapper = shallow(<BlogListing blogPost={blogPost} />);
+  const wrapper = shallow(<BlogListing blogPost={blogPost} user={sampleUser} />);
   expect(wrapper.find('.content #excerpt').length).toBe(0);
 });
 
 test('BlogListing should have the correct category', () => {
-  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   expect(wrapper.find('.category-text-container').text()).toBe(sampleBlogPost.category);
 });

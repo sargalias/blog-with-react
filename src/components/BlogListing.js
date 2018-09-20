@@ -1,9 +1,10 @@
 import React from 'react';
+import moment from 'moment';
 
-const BlogListing = ( { blogPost } ) => {
+const BlogListing = ( { blogPost, user } ) => {
   if (!blogPost)
     return null;
-  const { imageURL, category, title, excerpt, postLink, userName, userLink, date } = blogPost;
+  const { imageURL, category, title, excerpt, postLink, date } = blogPost;
   return (
     <article className="blog-listing">
       <div className="header">
