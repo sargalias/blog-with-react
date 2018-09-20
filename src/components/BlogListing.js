@@ -12,7 +12,7 @@ const BlogListing = ( { blogPost } ) => {
             <img src={imageURL} height="300" alt="" />
           </a>
         </div>
-        <div className="category-text-container"><a href="#" className="btn btn-primary">Travel</a></div>
+        <div className="category-text-container"><a href="#" className="btn btn-primary">{category}</a></div>
       </div>
       <div className="content">
         <h3 className="post-title"><a href="sdf">{title}</a></h3>

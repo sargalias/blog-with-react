@@ -53,3 +53,8 @@ test('BlogListing excerpt section should have no HTML with no excerpt', () => {
   const wrapper = shallow(<BlogListing blogPost={blogPost} />);
   expect(wrapper.find('.content #excerpt').length).toBe(0);
 });
+
+test('BlogListing should have the correct category', () => {
+  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
+  expect(wrapper.find('.category-text-container').text()).toBe(sampleBlogPost.category);
+});
