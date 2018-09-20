@@ -24,6 +24,11 @@ test('BlogListing should render empty with no props', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
+test('BlogListing should be empty with no props', () => {
+  const wrapper = shallow(<BlogListing />);
+  expect(wrapper.html()).toBeNull();
+});
+
 test('BlogListing should have the correct post title', () => {
   const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   expect(wrapper.find('h3').text()).toBe(sampleBlogPost.title);
