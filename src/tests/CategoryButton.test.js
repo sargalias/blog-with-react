@@ -17,3 +17,24 @@ test('CategoryButton correctly adds hoverColor prop to inline styles', () => {
   const wrapper = render(<CategoryButton hoverColor={hoverColor} />);
   expect(wrapper.css('color')).toBe(hoverColor);
 });
+
+test('CategoryButton has correct label', () => {
+  const label = 'test text';
+  const re = new RegExp(label);
+  const wrapper = render(<CategoryButton label={label} />);
+  expect(wrapper.text()).toMatch(re);
+});
+
+test('CategoryButton is set correctly when isActive=true', () => {
+  const isActive = true;
+  const expected = ' (current)';
+  const wrapper = render(<CategoryButton isActive={isActive} />);
+  expect(wrapper.text()).toBe(expected);
+});
+
+test('CategoryButton is set correctly when isActive=false', () => {
+  const isActive = false;
+  const expected = ' ';
+  const wrapper = render(<CategoryButton isActive={isActive} />);
+  expect(wrapper.text()).toBe(expected);
+});
