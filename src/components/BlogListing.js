@@ -1,6 +1,9 @@
 import React from 'react';
 
-const BlogListing = (props) => (
+const BlogListing = ( { blogPost: {
+  img, category, title, exerpt, postLink, userName, userLink, date
+} } = {}
+) => (
   <article className="blog-listing">
     <div className="header">
       <div className="aspect-ratio-img">
@@ -11,7 +14,7 @@ const BlogListing = (props) => (
       <div className="category-text-container"><a href="#" className="btn btn-primary">Travel</a></div>
     </div>
     <div className="content">
-      <h3 className="post-title"><a href="sdf">Post title</a></h3>
+      <h3 className="post-title"><a href="sdf">{title}</a></h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolor facere fugit ipsam maxime sequi
         soluta. Accusamus atque ea eaque harum, id impedit itaque magni odit optio quod? Non, officia.</p>
       <a href="#">Read more &raquo;</a>
