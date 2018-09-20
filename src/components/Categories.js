@@ -12,6 +12,12 @@ const Categories = ({ categories=[], activeCategory=null }) => (
 
       <div className="collapse navbar-collapse" id="navbarCategories">
         <ul className="navbar-nav ml-auto mr-auto">
+
+          {/*
+            Other than the surrounding HTML, this component is very basic
+            and presentational only. So I left the code below in this component,
+            instead of breaking it up to a different component.
+          */}
           <li className="navbar-brand">Categories</li>
 
           { categories && categories.map(categoryLabel => (
