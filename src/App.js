@@ -6,6 +6,7 @@ import HeaderNavbar from './components/HeaderNavbar';
 import Categories from './components/Categories';
 import Alerts from './components/Alerts';
 import BlogListing from './components/BlogListing';
+import Footer from './components/Footer';
 
 import sampleBlogPosts from './tests/fixtures/blogPosts';
 import sampleUsers from './tests/fixtures/users';
@@ -21,6 +22,7 @@ const App = () => (
       {type: 'danger', text: 'Test alert 2'}
     ]} />
     <BlogListing blogPost={sampleBlogPosts[0]} user={sampleUsers[0]} />
+    <Footer />
   </div>
 );
 
