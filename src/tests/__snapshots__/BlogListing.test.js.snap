@@ -16,7 +16,7 @@ exports[`BlogListing should render correctly with props 1`] = `
         <img
           alt=""
           height="300"
-          src="https://placeimg.com/500/250/any"
+          src="https://via.placeholder.com/350x350"
         />
       </a>
     </div>

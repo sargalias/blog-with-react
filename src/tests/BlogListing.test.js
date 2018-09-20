@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import BlogListing from '../components/BlogListing';
 
 const sampleBlogPost = {
-  img: 'https://plaholder.it/350x350',
+  imageURL: 'https://via.placeholder.com/350x350',
   category: 'Food',
   title: 'Test title',
   excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat harum obcaecati pariatur sint tempore unde. Aperiam commodi distinctio earum eligendi, enim itaque laudantium magni neque porro temporibus vitae voluptatum?',
@@ -27,4 +27,10 @@ test('BlogListing should render empty with no props', () => {
 test('BlogListing should have the correct post title', () => {
   const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
   expect(wrapper.find('h3').text()).toBe(sampleBlogPost.title);
+});
+
+test('BlogListing should have the correct image', () => {
+  const wrapper = shallow(<BlogListing blogPost={sampleBlogPost} />);
+  const re = new RegExp(`src="${sampleBlogPost.imageURL}"`);
+  expect(wrapper.find('img').html()).toMatch(re);
 });

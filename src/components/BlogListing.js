@@ -1,14 +1,14 @@
 import React from 'react';
 
 const BlogListing = ( { blogPost: {
-  img, category, title, exerpt, postLink, userName, userLink, date
+  imageURL, category, title, exerpt, postLink, userName, userLink, date
 } } = {}
 ) => (
   <article className="blog-listing">
     <div className="header">
       <div className="aspect-ratio-img">
         <a href="/sdf">
-          <img src="https://placeimg.com/500/250/any" height="300" alt="" />
+          <img src={imageURL} height="300" alt="" />
         </a>
       </div>
       <div className="category-text-container"><a href="#" className="btn btn-primary">Travel</a></div>
