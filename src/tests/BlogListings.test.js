@@ -4,12 +4,12 @@ import BlogListings from '../components/BlogListings';
 import blogPosts from './fixtures/blogPosts';
 
 describe('BlogListings', () => {
-  test.skip('Should render correctly without props', () => {
+  test('Should render correctly without props', () => {
     const wrapper = shallow(<BlogListings />);
     expect(wrapper).toMatchSnapshot();
   });
 
-  test.skip('Should render correctly with props', () => {
+  test('Should render correctly with props', () => {
     const wrapper = shallow(<BlogListings blogPosts={blogPosts} />);
     expect(wrapper).toMatchSnapshot();
   });
@@ -30,10 +30,17 @@ describe('BlogListings', () => {
   });
 
   test('Should have correct number of BlogListing children', () => {
-
+    const length = 3;
+    const wrapper = shallow(<BlogListings blogPosts={blogPosts.slice(0, length)} />);
+    expect(wrapper.find('BlogListing').length).toBe(3);
   });
 
   test('Should call BlogListing children with correct props', () => {
-
+    const legnth = 3;
+    const wrapper = shallow(<BlogListings blogPosts={blogPosts.slice(0, length)} />);
+    const blogListingList = wrapper.find('BlogListing');
+    blogListingList.forEach((blogListing, i) => {
+      expect(blogListing.props().blogPost).toEqual(blogPosts[i]);
+    });
   });
 });

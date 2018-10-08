@@ -3,11 +3,59 @@
 exports[`BlogListings Should render correctly with props 1`] = `
 <div
   className="blog-listings mt-4"
-/>
+>
+  <BlogListing
+    blogPost={
+      Object {
+        "category": "Food",
+        "date": "1970-01-01T00:00:00.000Z",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat harum obcaecati pariatur sint tempore unde. Aperiam commodi distinctio earum eligendi, enim itaque laudantium magni neque porro temporibus vitae voluptatum?",
+        "imageURL": "https://via.placeholder.com/350x350",
+        "postId": "1",
+        "title": "Test title",
+        "user": Object {
+          "displayName": "User displayName 1",
+          "id": 1,
+        },
+      }
+    }
+    key="1"
+  />
+  <BlogListing
+    blogPost={
+      Object {
+        "category": "Travel",
+        "date": "1970-01-06T00:00:00.000Z",
+        "excerpt": "Test excerpt 2",
+        "imageURL": "https://via.placeholder.com/200x200",
+        "postId": "2",
+        "title": "Test title 2",
+        "user": Object {
+          "displayName": "User displayName 2",
+          "id": 2,
+        },
+      }
+    }
+    key="2"
+  />
+  <BlogListing
+    blogPost={
+      Object {
+        "category": "Food",
+        "date": "1969-12-27T00:00:00.000Z",
+        "excerpt": "3 Lorem ipsum dolor",
+        "imageURL": "https://via.placeholder.com/250x250",
+        "postId": "3",
+        "title": "Test title 3",
+        "user": Object {
+          "displayName": "User displayName 3",
+          "id": 3,
+        },
+      }
+    }
+    key="3"
+  />
+</div>
 `;
 
-exports[`BlogListings Should render correctly without props 1`] = `
-<div
-  className="blog-listings mt-4"
-/>
-`;
+exports[`BlogListings Should render correctly without props 1`] = `""`;
