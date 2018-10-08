@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import NavLink from '../components/NavLink';
+import NavLink from '../../components/NavLink';
 
 test('NavLink should render correctly with no props', () => {
   const wrapper = shallow(<NavLink />);

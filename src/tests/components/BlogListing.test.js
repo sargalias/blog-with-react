@@ -1,9 +1,9 @@
 import React from 'react';
 import moment from 'moment';
 import { shallow } from 'enzyme';
-import BlogListing from '../components/BlogListing';
-import blogPosts from './fixtures/blogPosts';
-import users from './fixtures/users';
+import BlogListing from '../../components/BlogListing';
+import blogPosts from '../fixtures/blogPosts';
+import users from '../fixtures/users';
 
 let wrapper;
 

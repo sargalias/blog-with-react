@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Categories from '../components/Categories';
-import CategoryButton from '../components/CategoryButton';
+import Categories from '../../components/Categories';
+import CategoryButton from '../../components/CategoryButton';
 
 const categories = ['Food', 'Home', 'Travel', 'Sports'];
 

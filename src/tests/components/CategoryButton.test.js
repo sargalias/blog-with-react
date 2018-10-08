@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, render } from 'enzyme';
-import CategoryButton from "../components/CategoryButton";
+import CategoryButton from "../../components/CategoryButton";
 
 test('CategoryButton renders correctly with no props', () => {
   const wrapper = shallow(<CategoryButton />);

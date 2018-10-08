@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BlogListings from '../components/BlogListings';
-import blogPosts from './fixtures/blogPosts';
+import BlogListings from '../../components/BlogListings';
+import blogPosts from '../fixtures/blogPosts';
 
 describe('BlogListings', () => {
   test('Should render correctly without props', () => {

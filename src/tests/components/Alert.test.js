@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme'
-import Alert from '../components/Alert';
+import Alert from '../../components/Alert';
 
 test('alert should render correctly with no props', () => {
   const wrapper = shallow(<Alert />);
