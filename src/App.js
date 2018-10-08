@@ -5,11 +5,10 @@ import ReactDOM from 'react-dom';
 import HeaderNavbar from './components/HeaderNavbar';
 import Categories from './components/Categories';
 import Alerts from './components/Alerts';
-import BlogListing from './components/BlogListing';
+import BlogListings from './components/BlogListings';
 import Footer from './components/Footer';
 
 import sampleBlogPosts from './tests/fixtures/blogPosts';
-import sampleUsers from './tests/fixtures/users';
 import 'bootstrap';
 import './styles/main.scss';
 
@@ -21,7 +20,7 @@ const App = () => (
       {type: 'success', text: 'Test alert 1'},
       {type: 'danger', text: 'Test alert 2'}
     ]} />
-    <BlogListing blogPost={sampleBlogPosts[0]} user={sampleUsers[0]} />
+    <BlogListings blogPosts={sampleBlogPosts} />
     <Footer />
   </div>
 );
