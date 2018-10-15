@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationLink should render correctly 1`] = `
+<li
+  className="list-item"
+>
+  <a
+    className="page-link"
+    href="testLink"
+  >
+    testText
+  </a>
+</li>
+`;
